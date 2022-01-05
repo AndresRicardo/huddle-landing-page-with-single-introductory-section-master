@@ -1,0 +1,148 @@
+:root{
+    --size-Mobile: 375px;
+    --size-Desktop: 1440px;
+    --color-Violet: hsl(257, 40%, 49%);
+    --color-Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: var(--color-Violet); */
+}
+
+.backg{
+    width: var(--size-Mobile);
+    background-color: var(--color-Violet);
+
+}
+
+.container{
+    width: var(--size-Mobile);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url(images/bg-mobile.svg);
+}
+
+.page-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.page-header .logo img{
+    width: 130px;
+    
+}
+
+.page-header .muckup{
+    margin: 60px 0px;
+    width: fit-content;
+}
+
+.page-header .muckup img{
+    width: 290px;
+}
+
+.section-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-info .title h1{
+    width: 290px;
+    text-align: center;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 25px;
+
+}
+
+.section-info .text{
+    width: 290px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+
+}
+
+.section-info .button button{
+    width: 205px;
+    border-radius: 2em;
+    margin-bottom: 60px;
+    padding: 10px;
+    border-style: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-Violet);
+}
+
+.section-info .button button:hover{
+    color: white;
+    background-color: var(--color-Soft-Magenta);
+}
+
+.section-social-networks{
+    color: white;
+    margin-bottom: 30px;
+}
+.section-social-networks .fa-facebook{
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 5px;
+}
+
+.section-social-networks .fa-facebook:hover{
+    border: 1px solid var(--color-Soft-Magenta);
+    color: var(--color-Soft-Magenta);
+}
+
+.section-social-networks .fa-twitter{
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 5px;
+}
+.section-social-networks .fa-twitter:hover{
+    border: 1px solid var(--color-Soft-Magenta);
+    color: var(--color-Soft-Magenta);
+}
+
+
+.section-social-networks .fa-instagram{
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 5px;
+}
+.section-social-networks .fa-instagram:hover{
+    border: 1px solid var(--color-Soft-Magenta);
+    color: var(--color-Soft-Magenta);
+}
+
+.attribution{
+    font-size: 11px; text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
