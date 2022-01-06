@@ -35,12 +35,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     /* background-color: tomato; */
 }
 
 .logo{
     width: 42%;
+    justify-self: flex-start;
     /* background-color: steelblue; */
 }
 .logo img{
@@ -49,6 +50,7 @@ body{
 
 .mockup{
     margin: 70px 0px;
+    justify-self: center;
     /* background-color: steelblue; */
 }
 .mockup img{
@@ -125,4 +127,78 @@ body{
 .attribution a{
     color: white;
     text-decoration: none;
+}
+
+@media (min-width: 375px) {
+    
+    body{
+        justify-content: space-between;
+        background-color: var(--color-Violet);
+    }
+    .container{
+        width: 100%;
+        padding: 5%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1 1 auto;
+        background-image: url(images/bg-desktop.svg);
+    }
+
+    .header{
+        width: 60%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .logo{
+        width: 25%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    
+    .mockup{
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        align-self: center;
+    }
+    .mockup img{
+        width: 80%
+    }
+
+    .info{
+        width:40%;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .title{
+        width: 90%;
+        margin-top: auto;
+        font-size: 2.5em;
+        text-align: left;
+        line-height: 1em;
+    }
+    
+    .text{
+        width: 90%;
+        font-size: 1em;
+        text-align: left;
+    }
+    
+    .button{
+        width: 30%; flex: 0 0 auto;
+    }
+    
+    .social{
+        width: 30%;
+        margin-top: auto;
+        align-self: flex-end;
+    }
+
+    .footer{
+        justify-self: flex-end;
+        align-self: flex-start;
+    }
 }
