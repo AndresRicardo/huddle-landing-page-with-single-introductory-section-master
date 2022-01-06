@@ -10,239 +10,119 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 
 body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.backg{
-    width: var(--size-Mobile);
     background-color: var(--color-Violet);
-
 }
 
 .container{
-    width: var(--size-Mobile);
+    width: 100%;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     background: url(images/bg-mobile.svg);
 }
 
-.page-header{
+.header{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 50px;
+    justify-content: space-around;
+    /* background-color: tomato; */
 }
 
-.page-header .logo img{
-    width: 130px;
-    
+.logo{
+    width: 42%;
+    /* background-color: steelblue; */
+}
+.logo img{
+    width: 100%;
 }
 
-.page-header .muckup{
-    margin: 60px 0px;
-    width: fit-content;
+.mockup{
+    margin: 70px 0px;
+    /* background-color: steelblue; */
+}
+.mockup img{
+    width: 100%
 }
 
-.page-header .muckup img{
-    width: 290px;
-}
-
-.section-info{
+.info{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
-.section-info .title h1{
-    width: 290px;
-    text-align: center;
-    /* font-family: 'Open Sans', sans-serif; */
+.title{
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
     color: white;
-    margin-bottom: 25px;
-
+    font-size: 1.5em;
+    text-align: center;
+    /* background-color: tan; */
 }
 
-.section-info .text{
-    width: 290px;
-    text-align: center;
+.text{
     font-family: 'Open Sans', sans-serif;
     color: white;
-    margin-bottom: 25px;
-    font-size: 0.9em;
-
+    font-size: 1em;
+    text-align: center;
+    margin: 20px 0px;
+    /* background-color: teal; */
 }
 
-.section-info .button button{
-    width: 205px;
-    border-radius: 2em;
-    margin-bottom: 60px;
+.button{
+    width: 70%;
+    margin: 10px 0px;
     padding: 10px;
-    border-style: none;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
     color: var(--color-Violet);
+    font-size: 0.8em;
+    background-color: white;
+    border-radius: 2em;
+    border-style: none;
 }
 
-.section-info .button button:hover{
+.button:hover{
     color: white;
     background-color: var(--color-Soft-Magenta);
 }
 
-.section-social-networks{
+.social{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.social *{
     color: white;
-    margin-bottom: 30px;
-}
-.section-social-networks .fa-facebook{
     border: 1px solid white;
     border-radius: 50%;
-    margin: 10px;
-    padding: 5px;
+    margin-top: 35px;
+    padding: 5px
 }
 
-.section-social-networks .fa-facebook:hover{
+.social *:hover{
     border: 1px solid var(--color-Soft-Magenta);
     color: var(--color-Soft-Magenta);
 }
 
-.section-social-networks .fa-twitter{
-    border: 1px solid white;
-    border-radius: 50%;
-    margin: 10px;
-    padding: 5px;
-}
-.section-social-networks .fa-twitter:hover{
-    border: 1px solid var(--color-Soft-Magenta);
-    color: var(--color-Soft-Magenta);
-}
-
-
-.section-social-networks .fa-instagram{
-    border: 1px solid white;
-    border-radius: 50%;
-    margin: 10px;
-    padding: 5px;
-}
-.section-social-networks .fa-instagram:hover{
-    border: 1px solid var(--color-Soft-Magenta);
-    color: var(--color-Soft-Magenta);
-}
-
-footer{
-    align-self: flex-start
-}
-
-.attribution *{
-    font-size: 15px; text-align: center;
-    color: var(--color-Violet);
+.footer{
+    font-size: 0.7em; 
+    text-align: center;
+    color: white;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
 }
 
 .attribution a{
-    color: hsl(228, 45%, 44%);
-}
-
-/*####################    MEDIA QUERIES   ####################*/
-
-@media(min-width:375px){
-
-    body{
-        min-height: 100vh;
-        /* background-color: yellowgreen; */
-    }
-
-    .backg{
-        width: 100%;
-        height: 100%;
-        background-color: var(--color-Violet);
-    
-    }
-
-    .container{
-        width: 100vw;
-        height: 100vh;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        background: url(images/bg-desktop.svg);
-        
-    }
-
-    .page-header{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        /* margin-top: 50px 20px; */
-        width: 60%;
-        height: 100vh;
-        /* background-color:  rgb(75, 123, 245); */
-    }
-    
-    .page-header .logo img{
-        margin-left: 60px;
-        width: 200px;
-        
-    }
-    
-    .page-header .muckup{
-        margin: 60px 60px 0px 60px;
-        width: fit-content;
-    }
-    
-    .page-header .muckup img{
-        width: 600px;
-    }
-
-    .section-info{
-        /* background-color: rgb(114, 152, 248); */
-        width: 40%;
-        height: 100%;
-        align-items: flex-start;
-        justify-content: end;
-        padding: 0px 50px 0px 0px;
-
-    }
-    
-    .section-info .title h1{
-        width: 410px;
-        text-align: left;
-        font-family: 'Poppins', sans-serif;
-        font-size: 2.3em;
-        font-weight: bold;
-        color: white;
-        margin-bottom: 25px;
-
-        /* background-color: yellowgreen; */
-    
-    }
-    
-    .section-info .text{
-        width: 400px;
-        text-align: left;
-        font-family: 'Open Sans', sans-serif;
-        color: white;
-        margin-bottom: 25px;
-        font-size: 0.9em;
-
-        /* background-color: yellowgreen; */
-    
-    }
-
-    .section-social-networks{
-        align-self: flex-end;
-        justify-self: end;
-        /* background-color: yellowgreen; */
-    }
+    color: white;
+    text-decoration: none;
 }
