@@ -129,8 +129,9 @@ body{
     text-decoration: none;
 }
 
-@media (min-width: 375px) and (orientation: landscape) /* (min-aspect-ratio: 9/18.5)*/ {           
-    /* pantalla del s9 es: 1440x x2690 o 1080 x 2220 o 1480 x 720*/
+@media (min-width: 375px) and (orientation: landscape){
+    /* (min-aspect-ratio: 9/18.5)*/            
+    /* la pantalla del s9 es: 1440x x2690 o 1080 x 2220 o 1480 x 720*/
     
     body{
         justify-content: space-between;
@@ -143,6 +144,7 @@ body{
         flex-wrap: wrap;
         flex: 1 1 auto;
         background-image: url(images/bg-desktop.svg);
+        background-size: 100%;
     }
 
     .header{
