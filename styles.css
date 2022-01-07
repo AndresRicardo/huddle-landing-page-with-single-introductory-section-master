@@ -129,7 +129,8 @@ body{
     text-decoration: none;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (orientation: landscape) /* (min-aspect-ratio: 9/18.5)*/ {           
+    /* pantalla del s9 es: 1440x x2690 o 1080 x 2220 o 1480 x 720*/
     
     body{
         justify-content: space-between;
