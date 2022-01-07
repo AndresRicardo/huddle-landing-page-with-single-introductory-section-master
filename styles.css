@@ -28,6 +28,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     background: url(images/bg-mobile.svg);
+    background-size: 100% 100%;
 }
 
 .header{
